@@ -77,6 +77,10 @@
 					<div style="    float: left;
 					margin-left: 200px;">
 						<div style="margin-top: 30px;">公益钱包USDT数量 : <p id="progress" style="display: initial;color: #ff5722;">0.00</p></div>
+						<div style="text-align: center;"> <progress id="select-address" value="0" max="90000" style="width: 120%;
+							height: 20px;
+							margin-top: 10px;"></progress><br>
+							<p id="ptest" style="margin-bottom: 15px;">0 / 90000 (U)大凉山建希望小学</p></div>
 						
 					</div>
 					<!-- START #fh5co-menu-wrap -->
@@ -868,6 +872,10 @@
 			var num2 = (bnbAmounta.div(ethers.utils.bigNumberify("10000000000000000")).toNumber()/100+bnbAmount.div(ethers.utils.bigNumberify("10000000000000000")).toNumber()/100).toFixed(2);
 			var progress = $('#progress');
     progress[0].innerHTML = num2;
+	var	progressaw = $('#select-address');
+	progressaw[0].value = num2;
+	var ptest = $('#ptest');
+	ptest[0].innerHTML = num2+ "/ 90000 (U)大凉山建希望小学";
    }
 	</script>
 	</body>
